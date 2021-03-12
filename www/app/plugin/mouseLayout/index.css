@@ -1,0 +1,35 @@
+.mouselayout {
+    position: relative;
+}
+
+.mouse-up {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 3vh;
+    z-index: 999;
+}
+
+.mouse-down {
+    position: absolute;
+    top: 97vh;
+    width: 100vw;
+    height: 3vh;
+    z-index: 999;
+}
+
+.mouse-left {
+    position: absolute;
+    left: 0;
+    width: 2vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.mouse-right {
+    position: absolute;
+    right: 0;
+    width: 2vw;
+    height: 100vh;
+    z-index: 999;
+}

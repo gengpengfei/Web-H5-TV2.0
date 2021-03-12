@@ -1,0 +1,70 @@
+.menu {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-content {
+    width: 50%;
+    height: auto;
+    border-radius: 100vh;
+    background-color: rgba(255, 255, 255, .1)
+}
+
+.menu-recommend,
+.menu-video,
+.menu-video,
+.menu-music,
+.menu-app {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    margin: 12% 0;
+}
+
+.menu img {
+    height: 50%;
+}
+
+#menu .menu-recommend.focusable:focus {
+    background: rgba(255, 55, 95, 1);
+}
+
+#menu .menu-video.focusable:focus {
+    background: rgba(10, 132, 255, 1);
+}
+
+#menu .menu-video.focusable:focus {
+    background: rgba(48, 209, 88, 1);
+}
+
+#menu .menu-app.focusable:focus {
+    background: rgba(255, 181, 52, 1)
+}
+
+#menu .menu-music.focusable:focus {
+    background: rgba(133, 73, 255, 1);
+}
+
+#menu .focusable.active {
+    transform: scale(1.1);
+}
+
+.menu-recommend.current {
+    background: rgba(255, 55, 95, .3);
+}
+
+.menu-video.current {
+    background: rgba(10, 132, 255, .3);
+}
+
+.menu-video.current {
+    background: rgba(48, 209, 88, .3);
+}
+
+.menu-app.current {
+    background: rgba(255, 181, 52, .3)
+}
+
+.menu-music.current {
+    background: rgba(133, 73, 255, .3);
+}

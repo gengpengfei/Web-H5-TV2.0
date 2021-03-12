@@ -1,0 +1,160 @@
+@import url('../app.css');
+html {
+    user-select: none;
+    backface-visibility: hidden;
+    font-family: "Segoe UI", "Arial";
+    font-size: 2.5vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: rgba(228, 228, 228);
+    box-sizing: border-box;
+}
+
+img[src=""],
+img:not([src]) {
+    opacity: 0；
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:focus {
+    outline: 0;
+}
+
+input {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    border: none;
+}
+
+input {
+    background-color: transparent;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row-init {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.row-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+}
+
+.row-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+}
+
+.row-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.row-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.row-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+}
+
+.row-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.column-top {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-flow: column nowrap;
+}
+
+.column-start {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.column-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+
+.column-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.column-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+
+.column-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: column nowrap;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.block {
+    display: block !important;
+}
+
+.focusable img {
+    pointer-events: none;
+}

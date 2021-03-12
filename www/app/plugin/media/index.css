@@ -1,0 +1,80 @@
+/* 视频层 */
+
+.video-js {
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-js .vjs-tech,
+.vjs-poster {
+    pointer-events: none !important;
+}
+
+.vjs-has-started .vjs-poster {
+    transform: display;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
+
+
+/* 播控层 */
+
+.vjs-control-bar {
+    height: 10vh !important;
+    width: 95vw !important;
+    margin: 0 auto;
+    background-color: transparent !important;
+    position: relative !important;
+    top: -10vh;
+}
+
+.vjs-control-bar .vjs-current-time {
+    display: block !important;
+    position: absolute !important;
+    right: 6em;
+    top: 0;
+}
+
+.vjs-control-bar .vjs-time-divider {
+    display: block !important;
+    position: absolute !important;
+    right: 4em;
+    top: 0;
+}
+
+.vjs-control-bar .vjs-duration {
+    display: block !important;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+}
+
+.vjs-control-bar .vjs-progress-control {
+    width: 100vw !important;
+}
+
+.vjs-control-bar .vjs-play-progress {
+    background-color: #732CFC !important;
+}
+
+.vjs-control-bar .vjs-play-progress:before {
+    content: '' !important;
+    top: -1.8vh !important;
+    width: 4vh;
+    height: 4vh;
+    background-size: cover;
+    background-image: url('/app/static/image/play-icon.png');
+}
+
+.vjs-control-bar .vjs-play-progress.pause::before {
+    background-image: url('/app/static/image/pause-icon.png') !important;
+}
+
+
+/* 视频的标题 */
+
+.vjs-media-title {
+    position: fixed;
+    top: 4vh;
+    left: 3vw;
+}

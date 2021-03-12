@@ -1,0 +1,45 @@
+.recommend-list-container {
+    width: 92vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+.video-category {
+    height: auto;
+    width: 100%;
+}
+
+.video-category-item {
+    height: auto;
+    width: 100%;
+}
+
+.video-category-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: row wrap !important;
+}
+
+.video-category-content .content-item {
+    height: 21vh;
+    width: 21vw;
+    margin: 1vw;
+}
+
+.video-category-content .more-common {
+    background-image: url('/app/static/image/more-icon.webp') !important;
+    background-size: 45%;
+    background-color: rgba(133, 73, 255, 1);
+}
+
+.video-category-content .more-common img {
+    width: 50% !important;
+    height: auto;
+    margin-bottom: 15% !important;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}

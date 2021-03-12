@@ -1,0 +1,85 @@
+.videorecommend-container {
+    position: absolute;
+    left: 0;
+    top: 75vh;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    background: rgba(37, 43, 58, 0);
+    padding: 6vh 0vh;
+}
+
+.videorecommend-container.scrollAnimation {
+    top: 0;
+    background: rgba(37, 43, 58, 1);
+}
+
+.videorecommend-container .scrollPage {
+    width: 100%;
+    height: auto;
+}
+
+.video-channel-container {
+    height: 12vh;
+    width: 92vw;
+    margin: 0 auto;
+}
+
+.video-channel-icon {
+    position: absolute;
+    left: 50%;
+    top: -5vh;
+    opacity: 0;
+    width: 5vh;
+    height: 4vh;
+    background: url(/app/static/image/up-line-icon.png) center no-repeat;
+    background-size: cover;
+}
+
+.video-channel-icon.active-show {
+    animation: 2s opacity2 0s infinite;
+}
+
+@keyframes opacity2 {
+    0% {
+        opacity: 0.1
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+.video-channel-list {
+    height: 100%;
+    width: 92vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.video-channel-list .focusable {
+    width: 28.66vw;
+    height: 12vh;
+    margin: 0 1vw;
+}
+
+.video-channel-list .focusable:nth-child(1) {
+    background: #414BD9;
+}
+
+.video-channel-list .focusable:nth-child(2) {
+    background: #8836BC;
+}
+
+.video-channel-list .focusable:nth-child(3) {
+    background: #29AAA2;
+}
+
+.video-content-container {
+    height: auto;
+    width: 100%;
+}
